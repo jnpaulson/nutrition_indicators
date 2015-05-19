@@ -4,7 +4,7 @@ land_size,Size of operated land (ha),,ha
 land_size_pc,Size of operated land per capita (ha),,ha
 cid,Community ID,,categorical
 a4,Village,,categorical
-hh_weight,Raw household weight,,
+hh_weight,Raw household weight,,weight
 a1,District,,categorical
 a2,EPA,,categorical
 a3,Section,,categorical
@@ -22,12 +22,12 @@ hh_malesin,Head==single male,,categorical
 numadult,# of adults (age>=15),,no. of persons
 numchildren,# of children (age<15),,no. of persons
 numwomen,# of women (age>=15),,no. of persons
-depend_ratio,Dependency ratio,,
-hh_age,Age of household head,,
-age_ave,Avg. adult yrs of age,,
+depend_ratio,Dependency ratio,,ratio
+hh_age,Age of household head,,years
+age_ave,Avg. adult yrs of age,,years
 edu,indiv highest level of education,,categorical
-educ_ave,Avg. adult yrs of education,,
-educ_max,Max adult yrs of education,,
+educ_ave,Avg. adult yrs of education,,years
+educ_max,Max adult yrs of education,,years
 hh_edu,Education of hh head,,categorical
 hh_male_edu,Education of male head,,categorical
 hh_fem_edu,Education of female head,,categorical
@@ -71,190 +71,190 @@ tot_kcal_cons,kcal from tot consumption,,kcal
 purch_kcal_cons,kcal from purch consumption,,kcal
 own_kcal_cons,kcal from own consumption,,kcal
 gift_kcal_cons,kcal from gift consumption,,kcal
-tot_prot_cons,prot from tot consumption,protein,
-purch_prot_cons,prot from purch consumption,protein,
-own_prot_cons,prot from own consumption,protein,
-gift_prot_cons,prot from gift consumption,protein,
-tot_animal_prot_cons,animal_prot from tot consumption,animal protein,
-purch_animal_prot_cons,animal_prot from purch consumption,animal protein,
-own_animal_prot_cons,animal_prot from own consumption,animal protein,
-gift_animal_prot_cons,animal_prot from gift consumption,animal protein,
-tot_mfp_prot_cons,mfp_prot from tot consumption,,
-purch_mfp_prot_cons,mfp_prot from purch consumption,,
-own_mfp_prot_cons,mfp_prot from own consumption,,
-gift_mfp_prot_cons,mfp_prot from gift consumption,,
-tot_fat_cons,fat from tot consumption,fats,
-purch_fat_cons,fat from purch consumption,fats,
-own_fat_cons,fat from own consumption,fats,
-gift_fat_cons,fat from gift consumption,fats,
-tot_chocdf_cons,chocdf from tot consumption,,
-purch_chocdf_cons,chocdf from purch consumption,,
-own_chocdf_cons,chocdf from own consumption,,
-gift_chocdf_cons,chocdf from gift consumption,,
-tot_fasat_cons,fasat from tot consumption,saturated fats,
-purch_fasat_cons,fasat from purch consumption,saturated fats,
-own_fasat_cons,fasat from own consumption,saturated fats,
-gift_fasat_cons,fasat from gift consumption,saturated fats,
-tot_fams_cons,fams from tot consumption,monounsaturated fats,
-purch_fams_cons,fams from purch consumption,monounsaturated fats,
-own_fams_cons,fams from own consumption,monounsaturated fats,
-gift_fams_cons,fams from gift consumption,monounsaturated fats,
-tot_fapu_cons,fapu from tot consumption,polyunsaturated fats,
-purch_fapu_cons,fapu from purch consumption,polyunsaturated fats,
-own_fapu_cons,fapu from own consumption,polyunsaturated fats,
-gift_fapu_cons,fapu from gift consumption,polyunsaturated fats,
-tot_chole_cons,chole from tot consumption,choline,
-purch_chole_cons,chole from purch consumption,choline,
-own_chole_cons,chole from own consumption,choline,
-gift_chole_cons,chole from gift consumption,choline,
-tot_fib_cons,fib from tot consumption,fibers,
-purch_fib_cons,fib from purch consumption,fibers,
-own_fib_cons,fib from own consumption,fibers,
-gift_fib_cons,fib from gift consumption,fibers,
-tot_sucs_cons,sucs from tot consumption,,
-purch_sucs_cons,sucs from purch consumption,,
-own_sucs_cons,sucs from own consumption,,
-gift_sucs_cons,sucs from gift consumption,,
-tot_phytac_cons,phytac from tot consumption,phytic acid,
-purch_phytac_cons,phytac from purch consumption,phytic acid,
-own_phytac_cons,phytac from own consumption,phytic acid,
-gift_phytac_cons,phytac from gift consumption,phytic acid,
-tot_trp_cons,trp from tot consumption,tryptophan,
-purch_trp_cons,trp from purch consumption,tryptophan,
-own_trp_cons,trp from own consumption,tryptophan,
-gift_trp_cons,trp from gift consumption,tryptophan,
-tot_thr_cons,thr from tot consumption,threonine,
-purch_thr_cons,thr from purch consumption,threonine,
-own_thr_cons,thr from own consumption,threonine,
-gift_thr_cons,thr from gift consumption,threonine,
-tot_ile_cons,ile from tot consumption,isoleucine,
-purch_ile_cons,ile from purch consumption,isoleucine,
-own_ile_cons,ile from own consumption,isoleucine,
-gift_ile_cons,ile from gift consumption,isoleucine,
-tot_leu_cons,leu from tot consumption,leucine,
-purch_leu_cons,leu from purch consumption,leucine,
-own_leu_cons,leu from own consumption,leucine,
-gift_leu_cons,leu from gift consumption,leucine,
-tot_lys_cons,lys from tot consumption,lysine,
-purch_lys_cons,lys from purch consumption,lysine,
-own_lys_cons,lys from own consumption,lysine,
-gift_lys_cons,lys from gift consumption,lysine,
-tot_met_cons,met from tot consumption,methionine,
-purch_met_cons,met from purch consumption,methionine,
-own_met_cons,met from own consumption,methionine,
-gift_met_cons,met from gift consumption,methionine,
-tot_cys_cons,cys from tot consumption,cystine,
-purch_cys_cons,cys from purch consumption,cystine,
-own_cys_cons,cys from own consumption,cystine,
-gift_cys_cons,cys from gift consumption,cystine,
-tot_phe_cons,phe from tot consumption,phenylalanine,
-purch_phe_cons,phe from purch consumption,phenylalanine,
-own_phe_cons,phe from own consumption,phenylalanine,
-gift_phe_cons,phe from gift consumption,phenylalanine,
-tot_tyr_cons,tyr from tot consumption,tyrosine,
-purch_tyr_cons,tyr from purch consumption,tyrosine,
-own_tyr_cons,tyr from own consumption,tyrosine,
-gift_tyr_cons,tyr from gift consumption,tyrosine,
-tot_val_cons,val from tot consumption,valine,
-purch_val_cons,val from purch consumption,valine,
-own_val_cons,val from own consumption,valine,
-gift_val_cons,val from gift consumption,valine,
-tot_arg_cons,arg from tot consumption,arginine,
-purch_arg_cons,arg from purch consumption,arginine,
-own_arg_cons,arg from own consumption,arginine,
-gift_arg_cons,arg from gift consumption,arginine,
-tot_his_cons,his from tot consumption,histidine,
-purch_his_cons,his from purch consumption,histidine,
-own_his_cons,his from own consumption,histidine,
-gift_his_cons,his from gift consumption,histidine,
-tot_calcium_cons,calcium from tot consumption,calcium,
-purch_calcium_cons,calcium from purch consumption,calcium,
-own_calcium_cons,calcium from own consumption,calcium,
-gift_calcium_cons,calcium from gift consumption,calcium,
-tot_p_cons,p from tot consumption,phosphorus,
-purch_p_cons,p from purch consumption,phosphorus,
-own_p_cons,p from own consumption,phosphorus,
-gift_p_cons,p from gift consumption,phosphorus,
-tot_mg_cons,mg from tot consumption,magnesium,
-purch_mg_cons,mg from purch consumption,magnesium,
-own_mg_cons,mg from own consumption,magnesium,
-gift_mg_cons,mg from gift consumption,magnesium,
-tot_k_cons,k from tot consumption,potassium,
-purch_k_cons,k from purch consumption,potassium,
-own_k_cons,k from own consumption,potassium,
-gift_k_cons,k from gift consumption,potassium,
-tot_na_cons,na from tot consumption,sodium,
-purch_na_cons,na from purch consumption,sodium,
-own_na_cons,na from own consumption,sodium,
-gift_na_cons,na from gift consumption,sodium,
-tot_iron_cons,iron from tot consumption,iron,
-purch_iron_cons,iron from purch consumption,iron,
-own_iron_cons,iron from own consumption,iron,
-gift_iron_cons,iron from gift consumption,iron,
-tot_mfp_fe_cons,mfp_fe from tot consumption,,
-purch_mfp_fe_cons,mfp_fe from purch consumption,,
-own_mfp_fe_cons,mfp_fe from own consumption,,
-gift_mfp_fe_cons,mfp_fe from gift consumption,,
-tot_zinc_cons,zinc from tot consumption,zinc,
-purch_zinc_cons,zinc from purch consumption,zinc,
-own_zinc_cons,zinc from own consumption,zinc,
-gift_zinc_cons,zinc from gift consumption,zinc,
-tot_cu_cons,cu from tot consumption,copper,
-purch_cu_cons,cu from purch consumption,copper,
-own_cu_cons,cu from own consumption,copper,
-gift_cu_cons,cu from gift consumption,copper,
-tot_mn_cons,mn from tot consumption,manganese,
-purch_mn_cons,mn from purch consumption,manganese,
-own_mn_cons,mn from own consumption,manganese,
-gift_mn_cons,mn from gift consumption,manganese,
-tot_vita_A_cons,vita_A from tot consumption,vitamin A,
-purch_vita_A_cons,vita_A from purch consumption,vitamin A,
-own_vita_A_cons,vita_A from own consumption,vitamin A,
-gift_vita_A_cons,vita_A from gift consumption,vitamin A,
-tot_a_vita_cons,a_vita from tot consumption,vitamin A,
-purch_a_vita_cons,a_vita from purch consumption,vitamin A,
-own_a_vita_cons,a_vita from own consumption,vitamin A,
-gift_a_vita_cons,a_vita from gift consumption,vitamin A,
-tot_vitd_cons,vitd from tot consumption,vitamin D,
-purch_vitd_cons,vitd from purch consumption,vitamin D,
-own_vitd_cons,vitd from own consumption,vitamin D,
-gift_vitd_cons,vitd from gift consumption,vitamin D,
-tot_vita_E_cons,vita_E from tot consumption,vitamin E,
-purch_vita_E_cons,vita_E from purch consumption,vitamin E,
-own_vita_E_cons,vita_E from own consumption,vitamin E,
-gift_vita_E_cons,vita_E from gift consumption,vitamin E,
-tot_vita_C_cons,vita_C from tot consumption,vitamin C,
-purch_vita_C_cons,vita_C from purch consumption,vitamin C,
-own_vita_C_cons,vita_C from own consumption,vitamin C,
-gift_vita_C_cons,vita_C from gift consumption,vitamin C,
-tot_thia_cons,thia from tot consumption,thiamine,
-purch_thia_cons,thia from purch consumption,thiamine,
-own_thia_cons,thia from own consumption,thiamine,
-gift_thia_cons,thia from gift consumption,thiamine,
-tot_ribof_cons,ribof from tot consumption,riboflavin,
-purch_ribof_cons,ribof from purch consumption,riboflavin,
-own_ribof_cons,ribof from own consumption,riboflavin,
-gift_ribof_cons,ribof from gift consumption,riboflavin,
-tot_nia_cons,nia from tot consumption,niacin,
-purch_nia_cons,nia from purch consumption,niacin,
-own_nia_cons,nia from own consumption,niacin,
-gift_nia_cons,nia from gift consumption,niacin,
-tot_vita_B6_cons,vita_B6 from tot consumption,vitamin B6,
-purch_vita_B6_cons,vita_B6 from purch consumption,vitamin B6,
-own_vita_B6_cons,vita_B6 from own consumption,vitamin B6,
-gift_vita_B6_cons,vita_B6 from gift consumption,vitamin B6,
-tot_fol_cons,fol from tot consumption,folate,
-purch_fol_cons,fol from purch consumption,folate,
-own_fol_cons,fol from own consumption,folate,
-gift_fol_cons,fol from gift consumption,folate,
-tot_vita_B12_cons,vita_B12 from tot consumption,vitamin B12,
-purch_vita_B12_cons,vita_B12 from purch consumption,vitamin B12,
-own_vita_B12_cons,vita_B12 from own consumption,vitamin B12,
-gift_vita_B12_cons,vita_B12 from gift consumption,vitamin B12,
-tot_pant_cons,pant from tot consumption,pantothenic acid,
-purch_pant_cons,pant from purch consumption,pantothenic acid,
-own_pant_cons,pant from own consumption,pantothenic acid,
-gift_pant_cons,pant from gift consumption,pantothenic acid,
+tot_prot_cons,prot from tot consumption,protein,g
+purch_prot_cons,prot from purch consumption,protein,g
+own_prot_cons,prot from own consumption,protein,g
+gift_prot_cons,prot from gift consumption,protein,g
+tot_animal_prot_cons,animal_prot from tot consumption,animal protein,g
+purch_animal_prot_cons,animal_prot from purch consumption,animal protein,g
+own_animal_prot_cons,animal_prot from own consumption,animal protein,g
+gift_animal_prot_cons,animal_prot from gift consumption,animal protein,g
+tot_mfp_prot_cons,mfp_prot from tot consumption,"meat, fish, and poultry protein (does not include milk and eggs)",g
+purch_mfp_prot_cons,mfp_prot from purch consumption,"meat, fish, and poultry protein (does not include milk and eggs)",g
+own_mfp_prot_cons,mfp_prot from own consumption,"meat, fish, and poultry protein (does not include milk and eggs)",g
+gift_mfp_prot_cons,mfp_prot from gift consumption,"meat, fish, and poultry protein (does not include milk and eggs)",g
+tot_fat_cons,fat from tot consumption,fat,g
+purch_fat_cons,fat from purch consumption,fat,g
+own_fat_cons,fat from own consumption,fat,g
+gift_fat_cons,fat from gift consumption,fat,g
+tot_chocdf_cons,chocdf from tot consumption,"carbohydrate, by difference",g
+purch_chocdf_cons,chocdf from purch consumption,"carbohydrate, by difference",g
+own_chocdf_cons,chocdf from own consumption,"carbohydrate, by difference",g
+gift_chocdf_cons,chocdf from gift consumption,"carbohydrate, by difference",g
+tot_fasat_cons,fasat from tot consumption,saturated fatty acids,g
+purch_fasat_cons,fasat from purch consumption,saturated fatty acids,g
+own_fasat_cons,fasat from own consumption,saturated fatty acids,g
+gift_fasat_cons,fasat from gift consumption,saturated fatty acids,g
+tot_fams_cons,fams from tot consumption,monounsaturated fatty acids,g
+purch_fams_cons,fams from purch consumption,monounsaturated fatty acids,g
+own_fams_cons,fams from own consumption,monounsaturated fatty acids,g
+gift_fams_cons,fams from gift consumption,monounsaturated fatty acids,g
+tot_fapu_cons,fapu from tot consumption,polyunsaturated fatty acids,g
+purch_fapu_cons,fapu from purch consumption,polyunsaturated fatty acids,g
+own_fapu_cons,fapu from own consumption,polyunsaturated fatty acids,g
+gift_fapu_cons,fapu from gift consumption,polyunsaturated fatty acids,g
+tot_chole_cons,chole from tot consumption,cholesterol,mg
+purch_chole_cons,chole from purch consumption,cholesterol,mg
+own_chole_cons,chole from own consumption,cholesterol,mg
+gift_chole_cons,chole from gift consumption,cholesterol,mg
+tot_fib_cons,fib from tot consumption,fiber,g
+purch_fib_cons,fib from purch consumption,fiber,g
+own_fib_cons,fib from own consumption,fiber,g
+gift_fib_cons,fib from gift consumption,fiber,g
+tot_sucs_cons,sucs from tot consumption,sugar,g
+purch_sucs_cons,sucs from purch consumption,sugar,g
+own_sucs_cons,sucs from own consumption,sugar,g
+gift_sucs_cons,sucs from gift consumption,sugar,g
+tot_phytac_cons,phytac from tot consumption,phytate,mg
+purch_phytac_cons,phytac from purch consumption,phytate,mg
+own_phytac_cons,phytac from own consumption,phytate,mg
+gift_phytac_cons,phytac from gift consumption,phytate,mg
+tot_trp_cons,trp from tot consumption,tryptophan,mg
+purch_trp_cons,trp from purch consumption,tryptophan,mg
+own_trp_cons,trp from own consumption,tryptophan,mg
+gift_trp_cons,trp from gift consumption,tryptophan,mg
+tot_thr_cons,thr from tot consumption,threonine,mg
+purch_thr_cons,thr from purch consumption,threonine,mg
+own_thr_cons,thr from own consumption,threonine,mg
+gift_thr_cons,thr from gift consumption,threonine,mg
+tot_ile_cons,ile from tot consumption,isoleucine,mg
+purch_ile_cons,ile from purch consumption,isoleucine,mg
+own_ile_cons,ile from own consumption,isoleucine,mg
+gift_ile_cons,ile from gift consumption,isoleucine,mg
+tot_leu_cons,leu from tot consumption,leucine,mg
+purch_leu_cons,leu from purch consumption,leucine,mg
+own_leu_cons,leu from own consumption,leucine,mg
+gift_leu_cons,leu from gift consumption,leucine,mg
+tot_lys_cons,lys from tot consumption,lysine,mg
+purch_lys_cons,lys from purch consumption,lysine,mg
+own_lys_cons,lys from own consumption,lysine,mg
+gift_lys_cons,lys from gift consumption,lysine,mg
+tot_met_cons,met from tot consumption,methionine,mg
+purch_met_cons,met from purch consumption,methionine,mg
+own_met_cons,met from own consumption,methionine,mg
+gift_met_cons,met from gift consumption,methionine,mg
+tot_cys_cons,cys from tot consumption,cystine,mg
+purch_cys_cons,cys from purch consumption,cystine,mg
+own_cys_cons,cys from own consumption,cystine,mg
+gift_cys_cons,cys from gift consumption,cystine,mg
+tot_phe_cons,phe from tot consumption,phenylalanine,mg
+purch_phe_cons,phe from purch consumption,phenylalanine,mg
+own_phe_cons,phe from own consumption,phenylalanine,mg
+gift_phe_cons,phe from gift consumption,phenylalanine,mg
+tot_tyr_cons,tyr from tot consumption,tyrosine,mg
+purch_tyr_cons,tyr from purch consumption,tyrosine,mg
+own_tyr_cons,tyr from own consumption,tyrosine,mg
+gift_tyr_cons,tyr from gift consumption,tyrosine,mg
+tot_val_cons,val from tot consumption,valine,mg
+purch_val_cons,val from purch consumption,valine,mg
+own_val_cons,val from own consumption,valine,mg
+gift_val_cons,val from gift consumption,valine,mg
+tot_arg_cons,arg from tot consumption,arginine,mg
+purch_arg_cons,arg from purch consumption,arginine,mg
+own_arg_cons,arg from own consumption,arginine,mg
+gift_arg_cons,arg from gift consumption,arginine,mg
+tot_his_cons,his from tot consumption,histidine,mg
+purch_his_cons,his from purch consumption,histidine,mg
+own_his_cons,his from own consumption,histidine,mg
+gift_his_cons,his from gift consumption,histidine,mg
+tot_calcium_cons,calcium from tot consumption,calcium,mg
+purch_calcium_cons,calcium from purch consumption,calcium,mg
+own_calcium_cons,calcium from own consumption,calcium,mg
+gift_calcium_cons,calcium from gift consumption,calcium,mg
+tot_p_cons,p from tot consumption,phosphorus,mg
+purch_p_cons,p from purch consumption,phosphorus,mg
+own_p_cons,p from own consumption,phosphorus,mg
+gift_p_cons,p from gift consumption,phosphorus,mg
+tot_mg_cons,mg from tot consumption,magnesium,mg
+purch_mg_cons,mg from purch consumption,magnesium,mg
+own_mg_cons,mg from own consumption,magnesium,mg
+gift_mg_cons,mg from gift consumption,magnesium,mg
+tot_k_cons,k from tot consumption,potassium,mg
+purch_k_cons,k from purch consumption,potassium,mg
+own_k_cons,k from own consumption,potassium,mg
+gift_k_cons,k from gift consumption,potassium,mg
+tot_na_cons,na from tot consumption,sodium,mg
+purch_na_cons,na from purch consumption,sodium,mg
+own_na_cons,na from own consumption,sodium,mg
+gift_na_cons,na from gift consumption,sodium,mg
+tot_iron_cons,iron from tot consumption,iron,mg
+purch_iron_cons,iron from purch consumption,iron,mg
+own_iron_cons,iron from own consumption,iron,mg
+gift_iron_cons,iron from gift consumption,iron,mg
+tot_mfp_fe_cons,mfp_fe from tot consumption,"iron from meat, fish and poultry (does not include milk or eggs)",mg
+purch_mfp_fe_cons,mfp_fe from purch consumption,"iron from meat, fish and poultry (does not include milk or eggs)",mg
+own_mfp_fe_cons,mfp_fe from own consumption,"iron from meat, fish and poultry (does not include milk or eggs)",mg
+gift_mfp_fe_cons,mfp_fe from gift consumption,"iron from meat, fish and poultry (does not include milk or eggs)",mg
+tot_zinc_cons,zinc from tot consumption,zinc,mg
+purch_zinc_cons,zinc from purch consumption,zinc,mg
+own_zinc_cons,zinc from own consumption,zinc,mg
+gift_zinc_cons,zinc from gift consumption,zinc,mg
+tot_cu_cons,cu from tot consumption,copper,mg
+purch_cu_cons,cu from purch consumption,copper,mg
+own_cu_cons,cu from own consumption,copper,mg
+gift_cu_cons,cu from gift consumption,copper,mg
+tot_mn_cons,mn from tot consumption,manganese,mg
+purch_mn_cons,mn from purch consumption,manganese,mg
+own_mn_cons,mn from own consumption,manganese,mg
+gift_mn_cons,mn from gift consumption,manganese,mg
+tot_vita_A_cons,vita_A from tot consumption,vitamin A,µg RE
+purch_vita_A_cons,vita_A from purch consumption,vitamin A,µg RE
+own_vita_A_cons,vita_A from own consumption,vitamin A,µg RE
+gift_vita_A_cons,vita_A from gift consumption,vitamin A,µg RE
+tot_a_vita_cons,a_vita from tot consumption,animal source vitamin A,µg RE
+purch_a_vita_cons,a_vita from purch consumption,animal source vitamin A,µg RE
+own_a_vita_cons,a_vita from own consumption,animal source vitamin A,µg RE
+gift_a_vita_cons,a_vita from gift consumption,animal source vitamin A,µg RE
+tot_vitd_cons,vitd from tot consumption,vitamin D,µg
+purch_vitd_cons,vitd from purch consumption,vitamin D,µg
+own_vitd_cons,vitd from own consumption,vitamin D,µg
+gift_vitd_cons,vitd from gift consumption,vitamin D,µg
+tot_vita_E_cons,vita_E from tot consumption,vitamin E,µg
+purch_vita_E_cons,vita_E from purch consumption,vitamin E,µg
+own_vita_E_cons,vita_E from own consumption,vitamin E,µg
+gift_vita_E_cons,vita_E from gift consumption,vitamin E,µg
+tot_vita_C_cons,vita_C from tot consumption,vitamin C,mg
+purch_vita_C_cons,vita_C from purch consumption,vitamin C,mg
+own_vita_C_cons,vita_C from own consumption,vitamin C,mg
+gift_vita_C_cons,vita_C from gift consumption,vitamin C,mg
+tot_thia_cons,thia from tot consumption,thiamin,mg
+purch_thia_cons,thia from purch consumption,thiamin,mg
+own_thia_cons,thia from own consumption,thiamin,mg
+gift_thia_cons,thia from gift consumption,thiamin,mg
+tot_ribof_cons,ribof from tot consumption,riboflavin,mg
+purch_ribof_cons,ribof from purch consumption,riboflavin,mg
+own_ribof_cons,ribof from own consumption,riboflavin,mg
+gift_ribof_cons,ribof from gift consumption,riboflavin,mg
+tot_nia_cons,nia from tot consumption,niacin,mg
+purch_nia_cons,nia from purch consumption,niacin,mg
+own_nia_cons,nia from own consumption,niacin,mg
+gift_nia_cons,nia from gift consumption,niacin,mg
+tot_vita_B6_cons,vita_B6 from tot consumption,vitamin B6,mg
+purch_vita_B6_cons,vita_B6 from purch consumption,vitamin B6,mg
+own_vita_B6_cons,vita_B6 from own consumption,vitamin B6,mg
+gift_vita_B6_cons,vita_B6 from gift consumption,vitamin B6,mg
+tot_fol_cons,fol from tot consumption,folate,µg L68
+purch_fol_cons,fol from purch consumption,folate,µg L68
+own_fol_cons,fol from own consumption,folate,µg L68
+gift_fol_cons,fol from gift consumption,folate,µg L68
+tot_vita_B12_cons,vita_B12 from tot consumption,vitamin B12,µg
+purch_vita_B12_cons,vita_B12 from purch consumption,vitamin B12,µg
+own_vita_B12_cons,vita_B12 from own consumption,vitamin B12,µg
+gift_vita_B12_cons,vita_B12 from gift consumption,vitamin B12,µg
+tot_pant_cons,pant from tot consumption,pantothenic acid,mg
+purch_pant_cons,pant from purch consumption,pantothenic acid,mg
+own_pant_cons,pant from own consumption,pantothenic acid,mg
+gift_pant_cons,pant from gift consumption,pantothenic acid,mg
 def_kcal_rec_hh,HH consumes less than the rec amount of kcal,,categorical
 def_kcal_req_hh,HH consumes less than the req amount of kcal,,categorical
 def_prot_rec_hh,HH consumes less than the rec amount of prot,,categorical
@@ -283,16 +283,16 @@ def_calcium_rec_hh,HH consumes less than the rec amount of calcium,,categorical
 def_calcium_req_hh,HH consumes less than the req amount of calcium,,categorical
 def_vita_B12_rec_hh,HH consumes less than the rec amount of vita_B12,,categorical
 def_vita_B12_req_hh,HH consumes less than the req amount of vita_B12,,categorical
-hhae,Number of adult equivalents,,
+hhae,Number of adult equivalents,,no. of persons
 kcal_ae_req,HH calorie requirement for heavy activity,,kcal
 kcal_ae,Total daily energy acquisition per adult equivalent,,kcal
 gap_kcal_ae,Gap between kcal per AE and required kcal per AE,,kcal
 def_kcal_ae_hh,HH consumes less than the required amount of kcal (for total AE),,categorical
 tot_cal_per_hh,Total calories per hh,,cal
-ddi,Number of food items consumed,,
+ddi,Number of food items consumed,,count
 shannon_kcal,Shannon index based on calorie consumption,,index
 simpson_kcal,Simpson index based on calorie consumption,,index
-hdds,Number of food groups consumed,,
+hdds,Number of food groups consumed,,count
 sh_cereals_kcal,Shr. of cereals in total hh calorie intake,,percentage
 sh_roots_kcal,Shr. of roots in total hh calorie intake,,percentage
 sh_veg_kcal,Shr. of vegetables in total hh calorie intake,,percentage
@@ -305,7 +305,7 @@ sh_milk_kcal,Shr. of milk in total hh calorie intake,,percentage
 sh_oil_kcal,Shr. of oil&fats in total hh calorie intake,,percentage
 sh_sugar_kcal,Shr. of sugar & honey in total hh calorie intake,,percentage
 sh_misc_kcal,Shr. of miscellaneous foods in total hh calorie intake,,percentage
-tot_val_prod,Total value of household food production,,
-pdi_crop,Number of crop-source food items produced,,
-pdi_animal,Number of animal-source food items produced,,
-pdi_total,Total number of crop and animal-based food items produced,,
+tot_val_prod,Total value of household food production,,MWK
+pdi_crop,Number of crop-source food items produced,,count
+pdi_animal,Number of animal-source food items produced,,count
+pdi_total,Total number of crop and animal-based food items produced,,count
