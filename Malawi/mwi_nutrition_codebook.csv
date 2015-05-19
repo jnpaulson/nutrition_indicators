@@ -288,7 +288,7 @@ kcal_ae_req,HH calorie requirement for heavy activity,,kcal
 kcal_ae,Total daily energy acquisition per adult equivalent,,kcal
 gap_kcal_ae,Gap between kcal per AE and required kcal per AE,,kcal
 def_kcal_ae_hh,HH consumes less than the required amount of kcal (for total AE),,categorical
-tot_cal_per_hh,Total calories per hh,,cal
+tot_cal_per_hh,Total calories per hh,,kcal
 ddi,Number of food items consumed,,count
 shannon_kcal,Shannon index based on calorie consumption,,index
 simpson_kcal,Simpson index based on calorie consumption,,index
